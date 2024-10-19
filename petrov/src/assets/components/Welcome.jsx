@@ -8,12 +8,15 @@ const WelcomeContainer = styled.div`
   height: 100%;
   width: auto;
   background-color: #000000;
+  padding: 2rem;
   opacity: 65%;
   text-align: center;
+  text-overflow: clip;
+  gap: 4rem;
 `
 
 const Title = styled.p`
-  font-size: 6dvi;
+  font-size: 4rem;
   font-weight: bold;
   color: #FFFFFF;
 `
@@ -33,7 +36,6 @@ const BackgroundImage = styled.img`
 const Welcome = () => {
     return (
         <WelcomeContainer >
-            <BackgroundImage src="../public/WelcomeBackground.png" />
             <Title>Tu tranquilidad,
                 <br></br>
                 Nuestra prioridad</Title>
