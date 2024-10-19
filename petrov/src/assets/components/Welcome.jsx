@@ -28,10 +28,6 @@ const Copy = styled.p`
   max-width: 800px;
   line-height: 1.6;
 `
-const BackgroundImage = styled.img`
-  height: 100dvh;
-  width: auto;
-`
 
 const Welcome = () => {
     return (
