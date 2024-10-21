@@ -11,9 +11,9 @@ const WelcomeContainer = styled.div`
   background-image: url(../src/assets/images/background.png);
   background-size: cover;
   background-position: center;
-  padding: 2rem;
+  padding: 5rem 2rem 5rem 2rem;
   text-align: center;
-  gap: 4rem;
+  gap: 5rem;
 
   &::before {
     content: '';
