@@ -109,7 +109,7 @@ gap: 2rem;
 `
 
 const ValoresTextos = styled.p`
-text-align: left;
+text-align: center;
 `
 
 

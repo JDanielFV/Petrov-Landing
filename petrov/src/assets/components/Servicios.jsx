@@ -94,7 +94,7 @@ const ServicioContainer = styled.div`
   justify-content: center;
   height: auto;
   width: auto;
-  background-image: url(../src/assets/images/evaluacion.jpg);
+  background-image: url(${props => props.src});
   background-size: cover;
   background-position: center;
   padding: 10rem 2rem 10rem 2rem ;
@@ -108,8 +108,7 @@ const ServicioContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(101,9,9);
-    background: linear-gradient(90deg, rgba(101,9,9,0.7) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(${props => props.color});
     z-index: 1;
   }
 
@@ -129,9 +128,21 @@ const Servicios = () => {
                 <Title>Nuestros Servicios</Title>
                 <Copy>Con años de experiencia en el sector, Petrov, Soluciones Contra Incendio, ha construido una sólida reputación por su compromiso con la excelencia y la seguridad. Colaboramos estrechamente con nuestros clientes, entre los que se incluyen empresas destacadas como Herdez, Honeywell, Hielera del Norte, Pisos y Materiales Industriales, y muchos más. Comprendemos sus necesidades específicas y proporcionamos soluciones a medida que superen sus expectativas.</Copy>
             </ServiciosContainer>
-            <ServicioContainer>
+            <ServicioContainer src="./src/assets/images/evaluacion.jpg" color='90deg, rgba(101,9,9,1) 0%, rgba(255,255,255,0) 100%'>
                 <TitleServicios>Evaluacion de riesgos</TitleServicios>
                 <CopyServicios>Nuestros expertos analizan detalladamente cada aspecto del entorno, desde la infraestructura hasta los materiales utilizados</CopyServicios>
+            </ServicioContainer>
+            <ServicioContainer src="../src/assets/images/diseno.webp" color='270deg, rgba(101,9,9,1) 0%, rgba(255,255,255,0) 100%'>
+                <TitleServicios>Diseño e instalación de sistemas contra incendios</TitleServicios>
+                <CopyServicios>Desarrollamos e implementamos soluciones personalizadas, incluyendo sistemas de rociadores automáticos, alarmas contra incendio</CopyServicios>
+            </ServicioContainer>
+            <ServicioContainer src="../src/assets/images/capacitacion.jpg" color='90deg, rgba(101,9,9,1) 0%, rgba(255,255,255,0) 100%'>
+                <TitleServicios>Capacitación en seguridad</TitleServicios>
+                <CopyServicios>ofrecemos programas de capacitación para el personal y los residentes, abordando temas cruciales como la prevención de incendios</CopyServicios>
+            </ServicioContainer>
+            <ServicioContainer src="../src/assets/images/mantenimiento.jpg" color='270deg, rgba(101,9,9,1) 0%, rgba(255,255,255,0) 100%'>
+                <TitleServicios>Mantenimiento y pruebas regulares</TitleServicios>
+                <CopyServicios>Nuestra empresa proporciona servicios de mantenimiento programado y pruebas regulares para garantizar el funcionamiento oóptimo de los sistemas contra incendios</CopyServicios>
             </ServicioContainer>
         </>
     )
