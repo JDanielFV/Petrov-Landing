@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ConocenosContainer = styled.div`
+const CursosContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -95,35 +95,81 @@ const ImageV = styled.div`
   height: 3rem;
   margin-bottom: 2rem;
 `
-const ValoresContainer = styled.div`
+const CursoContainer = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 gap: 2rem;
+& :hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
 
 @media (max-width: 480px) {
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
   }
 `
 
-const ValoresTextos = styled.p`
+const CursoTarjeta = styled.p`
 text-align: center;
+background-color: #FFFFFF;
+width: 22rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0rem 0 1rem 0;
+border-radius: 1rem;
+overflow: hidden;
+object-fit: cover;
+`
+const CursoImagen = styled.img`
+  background-image: url(${props => props.src});
+  aspect-ratio: 3/2;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+`
+const CursoTextos = styled.p`
+text-align: center;
+font-size: 1.5rem;
+padding: 2rem 1rem 1rem 1rem;
 `
 
 
-const Conocenos = () => {
+const Cursos = () => {
     return (
-        <ConocenosContainer>
+        <CursosContainer>
             <Title>¿Ya conoces nuestros cursos?</Title>
             <Copy>En nuestra empresa, ofrecemos cursos especializados en prevención de incendios diseñados para proteger vidas y bienes. Aprenderás a identificar riesgos, utilizar extintores y tomar medidas preventivas clave para evitar emergencias. Nuestros entrenadores certificados te brindarán herramientas prácticas para responder de manera rápida y segura en caso de incendio.</Copy>
-        <div>
-            <div></div>
-            <p></p>
-        </div>
-        </ConocenosContainer>
+            <CursoContainer>
+                <CursoTarjeta>
+                    <CursoImagen src="../src/assets/images/bases.png"></CursoImagen>
+                    <CursoTextos>Bases en Sistemas Contra Incendio (NFPA 13, 14, 20, 25)</CursoTextos>
+                </CursoTarjeta>
+                <CursoTarjeta>
+                    <CursoImagen src="../src/assets/images/programacion.png"></CursoImagen>
+                    <CursoTextos>Aprende a Programar Notifier: VeriFire Tools</CursoTextos>
+                </CursoTarjeta>
+                <CursoTarjeta>
+                    <CursoImagen src="../src/assets/images/nfps25.jpg"></CursoImagen>
+                    <CursoTextos>NFPA 25: Aprende Sobre Mantenimientos en Sistemas Contra Incendios</CursoTextos>
+                </CursoTarjeta>
+                <CursoTarjeta>
+                    <CursoImagen src="../src/assets/images/bases.png"></CursoImagen>
+                    <CursoTextos>NFPA 72: Diseño de un Sistema de Alarmas</CursoTextos>
+                </CursoTarjeta>
+            </CursoContainer>
+        </CursosContainer>
     )
 }
 
-export default Conocenos
+export default Cursos
