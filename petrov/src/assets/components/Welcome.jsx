@@ -8,7 +8,7 @@ const WelcomeContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: auto;
-  background-image: url(../src/assets/images/background.png);
+  background-image: url(../src/assets/images/background.webp);
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem 5rem 2rem;
