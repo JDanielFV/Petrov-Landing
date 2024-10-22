@@ -65,36 +65,6 @@ const Copy = styled.p`
     max-width: 95%; /* Ajustar el ancho en pantallas pequeñas */
   }
 `
-
-const Valores = styled.div`
-  font-size: 1.5rem;
-  color: #DDDDDD;
-  text-align: center;
-  max-width: 20rem;
-  line-height: 1.3;
-  margin: 1rem 0 1rem 0 ;
-
-  /* Breakpoints para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    font-size: 1.25rem; /* Pantallas medianas (tablets) */
-    max-width: 30%; /* Ajustar el ancho en pantallas medianas */
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1rem; /* Pantallas pequeñas (móviles) */
-    max-width: 90%; /* Ajustar el ancho en pantallas pequeñas */
-  }
-`
-
-const ImageV = styled.div`
-  background-image: url(${props => props.src});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: auto;
-  height: 3rem;
-  margin-bottom: 2rem;
-`
 const CursoContainer = styled.div`
 display: flex;
 flex-wrap: wrap;
@@ -110,7 +80,8 @@ gap: 2rem;
 @media (max-width: 480px) {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items:center;
+   width: 75dvw;
   }
 `
 
@@ -126,6 +97,10 @@ padding: 0rem 0 1rem 0;
 border-radius: 1rem;
 overflow: hidden;
 object-fit: cover;
+
+@media (max-width: 480px) {
+    width: 75dvw;
+  }
 `
 const CursoImagen = styled.img`
   background-image: url(${props => props.src});
@@ -164,7 +139,7 @@ const Cursos = () => {
                     <CursoTextos>NFPA 25: Aprende Sobre Mantenimientos en Sistemas Contra Incendios</CursoTextos>
                 </CursoTarjeta>
                 <CursoTarjeta>
-                    <CursoImagen src="../src/assets/images/bases.png"></CursoImagen>
+                    <CursoImagen src="../src/assets/images/nfpa.webp"></CursoImagen>
                     <CursoTextos>NFPA 72: Diseño de un Sistema de Alarmas</CursoTextos>
                 </CursoTarjeta>
             </CursoContainer>
