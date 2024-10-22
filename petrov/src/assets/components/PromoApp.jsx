@@ -22,7 +22,7 @@ const AppText = styled.div`
 `;
 
 const AppMockup = styled.img`
-  width: 10rem;
+  width: 14rem;
   height: auto;
   background-image: url(${props => props.src});
   background-size: contain;
@@ -56,12 +56,14 @@ const AppLinkContainer = styled.div`
 `;
 
 const Promo = styled.div`
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 5rem 2rem;
+  background-color: #FFF;
+  color: #000;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 4rem;
 `;
 
