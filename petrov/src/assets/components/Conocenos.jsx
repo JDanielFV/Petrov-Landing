@@ -111,6 +111,12 @@ gap: 2rem;
 const ValoresTextos = styled.p`
 text-align: center;
 `
+const ValoresTitulo = styled.p`
+text-align: center;
+font-weight: 400;
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+`
 
 
 const Conocenos = () => {
@@ -122,10 +128,12 @@ const Conocenos = () => {
             <ValoresContainer>
             <Valores>
                 <ImageV src="../src/assets/images/MisionIcono.svg" />
+                <ValoresTitulo>Misión</ValoresTitulo>
                 <ValoresTextos>Proporcionar soluciones innovadoras y efectivas para la prevención y control de incendios en todos los sectores, asegurando la protección de vidas y bienes.</ValoresTextos>
             </Valores>
             <Valores>
                 <ImageV src="../src/assets/images/VisionIcono.svg" />
+                <ValoresTitulo>Visión</ValoresTitulo>
                 <ValoresTextos>Proporcionar soluciones innovadoras y efectivas para la prevención y control de incendios en todos los sectores, asegurando la protección de vidas y bienes.</ValoresTextos>
             </Valores>
             </ValoresContainer>

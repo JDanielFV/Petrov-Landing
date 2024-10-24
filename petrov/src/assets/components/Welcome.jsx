@@ -6,7 +6,7 @@ const WelcomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 40rem;
   width: auto;
   background-image: url(../src/assets/images/background.webp);
   background-size: cover;
