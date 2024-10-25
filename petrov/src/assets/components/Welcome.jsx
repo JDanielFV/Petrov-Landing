@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Cta from '../components/Cta'
+
 
 const WelcomeContainer = styled.div`
   position: relative;
@@ -76,6 +78,7 @@ const Welcome = () => {
 
                 Nuestra misión es proporcionar soluciones integrales y avanzadas para garantizar la seguridad y protección de vidas y propiedades.
             </Copy>
+            <Cta text={"Contactanos"}/>
         </WelcomeContainer>
     )
 }

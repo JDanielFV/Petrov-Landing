@@ -100,6 +100,11 @@ const Navbar = () => {
     }
   };
 
+  // Función para hacer scroll a la parte superior
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Función para alternar el estado del menú en móviles
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -108,7 +113,7 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       {/* Logo de la página */}
-      <Logo src="../src/assets/images/logo.png" alt="Logo" />
+      <Logo onClick={scrollToTop} src="../src/assets/images/logo.png" alt="Logo" />
 
       {/* Enlaces en vista de escritorio */}
       <NavLinks>

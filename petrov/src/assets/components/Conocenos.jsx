@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Cta from '../components/Cta'
+
 
 const ConocenosContainer = styled.div`
   position: relative;
@@ -124,7 +126,6 @@ const Conocenos = () => {
         <ConocenosContainer>
             <Title>¿Quienes somos?</Title>
             <Copy>Con años de experiencia en el sector, Petrov, Soluciones Contra Incendio, ha construido una sólida reputación por su compromiso con la excelencia y la seguridad. Colaboramos estrechamente con nuestros clientes, entre los que se incluyen empresas destacadas como Herdez, Honeywell, Hielera del Norte, Pisos y Materiales Industriales, y muchos más. Comprendemos sus necesidades específicas y proporcionamos soluciones a medida que superen sus expectativas.</Copy>
-
             <ValoresContainer>
             <Valores>
                 <ImageV src="../src/assets/images/MisionIcono.svg" />
@@ -137,6 +138,10 @@ const Conocenos = () => {
                 <ValoresTextos>Proporcionar soluciones innovadoras y efectivas para la prevención y control de incendios en todos los sectores, asegurando la protección de vidas y bienes.</ValoresTextos>
             </Valores>
             </ValoresContainer>
+            <Title>Nuestros Servicios</Title>
+                <Copy>Con años de experiencia en el sector, Petrov, Soluciones Contra Incendio, ha construido una sólida reputación por su compromiso con la excelencia y la seguridad. Colaboramos estrechamente con nuestros clientes, entre los que se incluyen empresas destacadas como Herdez, Honeywell, Hielera del Norte, Pisos y Materiales Industriales, y muchos más. Comprendemos sus necesidades específicas y proporcionamos soluciones a medida que superen sus expectativas.</Copy>
+                <Cta text={"Contactanos"} />
+
         </ConocenosContainer>
     )
 }

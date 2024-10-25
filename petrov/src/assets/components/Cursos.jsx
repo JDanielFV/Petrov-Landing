@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Cta from '../components/Cta'
 
 const CursosContainer = styled.div`
   position: relative;
@@ -129,18 +130,22 @@ const Cursos = () => {
                 <CursoTarjeta>
                     <CursoImagen src="../src/assets/images/bases.png"></CursoImagen>
                     <CursoTextos>Bases en Sistemas Contra Incendio (NFPA 13, 14, 20, 25)</CursoTextos>
+                    <Cta text={"Conoce máss"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
                     <CursoImagen src="../src/assets/images/programacion.png"></CursoImagen>
                     <CursoTextos>Aprende a Programar Notifier: VeriFire Tools</CursoTextos>
+                    <Cta text={"Conoce máss"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
                     <CursoImagen src="../src/assets/images/nfps25.jpg"></CursoImagen>
                     <CursoTextos>NFPA 25: Aprende Sobre Mantenimientos en Sistemas Contra Incendios</CursoTextos>
+                    <Cta text={"Conoce máss"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
                     <CursoImagen src="../src/assets/images/nfpa.webp"></CursoImagen>
                     <CursoTextos>NFPA 72: Diseño de un Sistema de Alarmas</CursoTextos>
+                    <Cta text={"Conoce máss"}/>
                 </CursoTarjeta>
             </CursoContainer>
         </CursosContainer>
