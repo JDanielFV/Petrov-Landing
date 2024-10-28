@@ -92,13 +92,14 @@ const FormContainerTitle = styled.p`
 `;
 
 const FormInput = styled.input`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 200;
   border-radius: 0.5rem;
   border: none;
   background-color: #E8E8E8;
   padding: 0.5rem;
   width: 100%;
+  font-family: outfit;
 
   @media (max-width: 768px) {
     font-size: 1.2rem;

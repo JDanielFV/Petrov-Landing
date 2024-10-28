@@ -3,17 +3,23 @@ import styled from 'styled-components';
 // Estilos para el contenedor de la barra de navegación
 const Footer = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: top;
   padding: 3rem 0rem 3rem 0rem;
   background-color: #3C0000;
 `
-const FooterContainer = styled.nav`
+const FooterContainer = styled.div`
 color: #FFFFFF;
+flex-direction: column;
+display: flex;
+align-items: center;
+gap: 1rem;
 `
-const FooterLink = styled.nav`
+const FooterLink = styled.a`
 color: #FFFFFF;
+text-decoration: none;
+cursor: pointer;
 `
 const FooterTitle = styled.nav`
 font-size: 1.3rem;
@@ -50,10 +56,10 @@ const Navbar = () => {
                 </FooterContainer>
                 <FooterContainer>
                     <FooterTitle>Contactanos</FooterTitle>
-                    <FooterLink >Telefono</FooterLink>
-                    <FooterLink >Correo</FooterLink>
-                    <FooterLink >Facebook</FooterLink>
-                    <FooterLink >LinkedIn</FooterLink>
+                    <FooterLink href='tel:6863567581'>Telefono</FooterLink>
+                    <FooterLink href='mailto:contacto@petrovsci.com.mx'>Correo</FooterLink>
+                    <FooterLink href='https://www.facebook.com/profile.php?id=61555431474610'>Facebook</FooterLink>
+                    <FooterLink href='https://www.linkedin.com/company/petrov-soluciones-contra-incendio/'>LinkedIn</FooterLink>
                 </FooterContainer>
             </Footer>
             <Disclaimer>Desarrollado por: Danika - 2024</Disclaimer>
