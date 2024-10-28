@@ -211,17 +211,17 @@ const ContactForm = () => {
           </Form>
           <EnlaceContainer>
             <Enlace>
-              <EnlaceImg src="/public/images/Numero.png" alt="Número de contacto" />
+              <EnlaceImg src="/Numero.png" alt="Número de contacto" />
               <EnlaceA href="tel:6863567581">686 356 7581</EnlaceA>
             </Enlace>
             <Enlace>
-              <EnlaceImg src="/public/images/Mail.png" alt="Correo de contacto" />
+              <EnlaceImg src="/Mail.png" alt="Correo de contacto" />
               <EnlaceA href="mailto:contacto@petrivsci.com.mx">contacto@petrovsci.com.mx</EnlaceA>
             </Enlace>
-            <LogoEnlace src='/public/images/logo.png' alt="Logo de la empresa" />
+            <LogoEnlace src='/logo.png' alt="Logo de la empresa" />
             <EnlaceRedes>
-              <a href='https://www.facebook.com/profile.php?id=61555431474610'><EnlaceImg src='/public/images/Facebook.png' alt="Facebook" /></a>
-              <a href='https://www.linkedin.com/company/petrov-soluciones-contra-incendio/'><EnlaceImg src='/public/images/Linkedin.png' alt="LinkedIn" /></a>
+              <a href='https://www.facebook.com/profile.php?id=61555431474610'><EnlaceImg src='/Facebook.png' alt="Facebook" /></a>
+              <a href='https://www.linkedin.com/company/petrov-soluciones-contra-incendio/'><EnlaceImg src='/Linkedin.png' alt="LinkedIn" /></a>
             </EnlaceRedes>
           </EnlaceContainer>
         </Formulario>

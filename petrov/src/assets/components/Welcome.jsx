@@ -10,7 +10,7 @@ const WelcomeContainer = styled.div`
   justify-content: center;
   height: 40rem;
   width: auto;
-  background-image: url(/public/images/background.webp);
+  background-image: url(/background.webp);
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem 5rem 2rem;

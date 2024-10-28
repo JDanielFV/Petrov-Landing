@@ -114,7 +114,7 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       {/* Logo de la página */}
-      <Logo onClick={scrollToTop} src="../src/assets/images/logo.png" alt="Logo" />
+      <Logo onClick={scrollToTop} src="/logo.png" alt="Logo" />
 
       {/* Enlaces en vista de escritorio */}
       <NavLinks>

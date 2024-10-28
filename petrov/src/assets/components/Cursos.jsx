@@ -9,7 +9,7 @@ const CursosContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: auto;
-  background-image: url(/public/images/bg3.jpeg);
+  background-image: url(/bg3.jpeg);
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem;
@@ -128,22 +128,22 @@ const Cursos = () => {
             <Copy>En nuestra empresa, ofrecemos cursos especializados en prevención de incendios diseñados para proteger vidas y bienes. Aprenderás a identificar riesgos, utilizar extintores y tomar medidas preventivas clave para evitar emergencias. Nuestros entrenadores certificados te brindarán herramientas prácticas para responder de manera rápida y segura en caso de incendio.</Copy>
             <CursoContainer>
                 <CursoTarjeta>
-                    <CursoImagen src="/public/images/bases.png"></CursoImagen>
+                    <CursoImagen src="/bases.png"></CursoImagen>
                     <CursoTextos>Bases en Sistemas Contra Incendio (NFPA 13, 14, 20, 25)</CursoTextos>
                     <Cta text={"Conoce más"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
-                    <CursoImagen src="/public/images/programacion.png"></CursoImagen>
+                    <CursoImagen src="/programacion.png"></CursoImagen>
                     <CursoTextos>Aprende a Programar Notifier: VeriFire Tools</CursoTextos>
                     <Cta text={"Conoce más"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
-                    <CursoImagen src="/public/images/nfps25.jpg"></CursoImagen>
+                    <CursoImagen src="/nfps25.jpg"></CursoImagen>
                     <CursoTextos>NFPA 25: Aprende Sobre Mantenimientos en Sistemas Contra Incendios</CursoTextos>
                     <Cta text={"Conoce más"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
-                    <CursoImagen src="/public/images/nfpa.webp"></CursoImagen>
+                    <CursoImagen src="/nfpa.webp"></CursoImagen>
                     <CursoTextos>NFPA 72: Diseño de un Sistema de Alarmas</CursoTextos>
                     <Cta text={"Conoce más"}/>
                 </CursoTarjeta>

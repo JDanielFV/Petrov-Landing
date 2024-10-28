@@ -74,10 +74,10 @@ const AppPromo = () => {
         <AppTitle>Prueba nuestra app</AppTitle>
         <AppText>Disponible en App store y Play store, úsala para programar tus mantenimientos regulares</AppText>
       </AppContainer>
-      <AppMockup src="/public/images/ios1.png"></AppMockup>
+      <AppMockup src="/ios1.png"></AppMockup>
       <AppLinkContainer>
-        <AppLink  href="https://play.google.com/store/apps/details?id=com.geologisticerp&hl=es_MX"><AppLinkImg src="/public/images/Playstore.png"></AppLinkImg></AppLink>
-        <AppLink src="/public/images/ios1.png" href="https://apps.apple.com/mx/app/geologistic-erp/id6452047734"><AppLinkImg src="/public/images/Appstore.png"></AppLinkImg></AppLink>
+        <AppLink  href="https://play.google.com/store/apps/details?id=com.geologisticerp&hl=es_MX"><AppLinkImg src="/Playstore.png"></AppLinkImg></AppLink>
+        <AppLink src="/ios1.png" href="https://apps.apple.com/mx/app/geologistic-erp/id6452047734"><AppLinkImg src="/Appstore.png"></AppLinkImg></AppLink>
       </AppLinkContainer>
     </Promo>
   );

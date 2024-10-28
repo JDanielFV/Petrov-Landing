@@ -10,7 +10,7 @@ const ConocenosContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: auto;
-  background-image: url(/public/images/background2.jpg);
+  background-image: url(/background2.jpg);
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem;
@@ -128,12 +128,12 @@ const Conocenos = () => {
             <Copy>Con años de experiencia en el sector, Petrov, Soluciones Contra Incendio, ha construido una sólida reputación por su compromiso con la excelencia y la seguridad. Colaboramos estrechamente con nuestros clientes, entre los que se incluyen empresas destacadas como Herdez, Honeywell, Hielera del Norte, Pisos y Materiales Industriales, y muchos más. Comprendemos sus necesidades específicas y proporcionamos soluciones a medida que superen sus expectativas.</Copy>
             <ValoresContainer>
             <Valores>
-                <ImageV src="/public/images/MisionIcono.svg" />
+                <ImageV src="/MisionIcono.svg" />
                 <ValoresTitulo>Misión</ValoresTitulo>
                 <ValoresTextos>Proporcionar soluciones innovadoras y efectivas para la prevención y control de incendios en todos los sectores, asegurando la protección de vidas y bienes.</ValoresTextos>
             </Valores>
             <Valores>
-                <ImageV src="/public/images/VisionIcono.svg" />
+                <ImageV src="/VisionIcono.svg" />
                 <ValoresTitulo>Visión</ValoresTitulo>
                 <ValoresTextos>Proporcionar soluciones innovadoras y efectivas para la prevención y control de incendios en todos los sectores, asegurando la protección de vidas y bienes.</ValoresTextos>
             </Valores>
