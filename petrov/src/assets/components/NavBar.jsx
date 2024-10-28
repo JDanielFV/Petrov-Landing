@@ -20,7 +20,8 @@ const NavbarContainer = styled.nav`
 const Logo = styled.img`
   cursor: pointer;
   width: auto;
-  height: 5rem; /* Ajusta el tamaño del logo */
+  height: 3rem;
+  margin: 0.4rem;
 `;
 
 // Contenedor de enlaces para vista de escritorio

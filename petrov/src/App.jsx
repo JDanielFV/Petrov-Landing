@@ -4,8 +4,10 @@ import Conocenos from './assets/components/Conocenos';
 import Servicios from './assets/components/Servicios';
 import Cursos from './assets/components/Cursos';
 import PromoApp from './assets/components/PromoApp';
-// import Contacto from './assets/components/Contacto'
+import Contacto from './assets/components/Contacto'
 import NavBarDesktop from './assets/components/NavBar.jsx';
+import Footer from './assets/components/Footer.jsx';
+
 
 function App() {
   return (
@@ -38,9 +40,14 @@ function App() {
       </section>
 
       {/* Si tienes un componente de contacto en el futuro */}
-      {/* <section id="contacto">
+      <section id="contacto">
         <Contacto />
-      </section> */}
+      </section>
+     
+     {/* Si tienes un componente de contacto en el futuro */}
+      <section id="contacto">
+        <Footer />
+      </section>
     </>
   );
 }

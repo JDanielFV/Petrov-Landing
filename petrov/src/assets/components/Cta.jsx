@@ -15,8 +15,8 @@ const ScrollButton = styled.button`
   max-width: 14rem;
 
   &:hover {
-    background-color: #fff;
-    color: #021757;
+    background-color: #002286;
+    color: #FFFFFF;
     transform: translateY(-.5rem); // Efecto de elevación
   }
 `;

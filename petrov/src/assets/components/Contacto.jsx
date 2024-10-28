@@ -1,116 +1,230 @@
 import styled from 'styled-components';
-import { useState } from 'react';
 
-// Estilos del formulario
 const FormContainer = styled.div`
+  background: rgb(101, 9, 9);
+  background: linear-gradient(360deg, rgba(101, 9, 9, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Outfit', sans-serif;
+  padding: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+`;
+
+const FormText = styled.div`
+  width: 80vw;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
+`;
+
+const FormTitle = styled.p`
+  font-size: 4vw;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 5vw;
+  }
+  @media (max-width: 480px) {
+    font-size: 6vw;
+  }
+`;
+
+const FormCopy = styled.p`
+  font-size: 2vw;
+
+  @media (max-width: 768px) {
+    font-size: 2.5vw;
+  }
+`;
+
+const ContactoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  width: 100%;
+  align-items: center;
 `;
 
-const Input = styled.input`
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+const Formulario = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
-const TextArea = styled.textarea`
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  min-height: 150px;
+const Form = styled.div`
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
+  background-color: #FFF;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    padding: 1.5rem;
+  }
 `;
 
-const SubmitButton = styled.button`
-  padding: 0.75rem;
+const FormContainerTitle = styled.p`
+  font-size: 2rem;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+`;
+
+const FormInput = styled.input`
+  font-size: 1.5rem;
+  font-weight: 200;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #E8E8E8;
+  padding: 0.5rem;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+`;
+
+const FormButton = styled.button`
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   border: none;
-  border-radius: 4px;
-  background-color: #333;
-  color: #fff;
+  background-color: #3B8CC7;
+  color: #FFF;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+
+  @media (max-width: 480px) {
+    padding: 0.8rem 1.5rem;
+  }
 
   &:hover {
-    background-color: #555;
+    background-color: #3379a3;
+  }
+`;
+
+const EnlaceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    gap: 0.8rem;
+  }
+`;
+
+const Enlace = styled.div`
+  background-color: #650909;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  width: 300px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
+const EnlaceRedes = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  padding: 0.1rem 1rem;
+  width: 250px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    gap: 1rem;
+  }
+`;
+
+const EnlaceImg = styled.img`
+  height: 2rem;
+  padding: 0.4rem;
+
+  @media (max-width: 480px) {
+    height: 1.5rem;
+  }
+`;
+
+const EnlaceA = styled.a`
+  text-decoration: none;
+  color: #FFF;
+`;
+
+const LogoEnlace = styled.img`
+  width: 15rem;
+  padding: 0.4rem;
+
+  @media (max-width: 768px) {
+    width: 12rem;
+  }
+  @media (max-width: 480px) {
+    width: 10rem;
   }
 `;
 
 const ContactForm = () => {
-  // Estado para los datos del formulario
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Aquí enviamos los datos a través de un backend o servicio de terceros
-    fetch('https://YOUR_BACKEND_URL/send-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          alert('Mensaje enviado con éxito!');
-          setFormData({ name: '', email: '', message: '' }); // Limpiar formulario
-        } else {
-          alert('Hubo un error al enviar el mensaje.');
-        }
-      })
-      .catch((error) => {
-        console.error('Error al enviar el mensaje:', error);
-        alert('Hubo un error al enviar el mensaje.');
-      });
-  };
-
   return (
     <FormContainer>
-      <h2>Contáctanos</h2>
-      <form onSubmit={handleSubmit}>
-        <Input
-          type="text"
-          name="name"
-          placeholder="Nombre"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <Input
-          type="email"
-          name="email"
-          placeholder="Correo Electrónico"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <TextArea
-          name="message"
-          placeholder="Mensaje"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-        <SubmitButton type="submit">Enviar</SubmitButton>
-      </form>
+      <FormText>
+        <FormTitle>Contáctanos</FormTitle>
+        <FormCopy>Estás a un click de reducir el riesgo de incendios, ponte en contacto con nosotros</FormCopy>
+      </FormText>
+      <ContactoContainer>
+        <Formulario>
+          <Form>
+            <FormContainerTitle>Contáctanos</FormContainerTitle>
+            <FormInput type='text' name='name' placeholder='Tu Nombre' required />
+            <FormInput type='email' name='email' placeholder='Tu Email' required />
+            <FormInput type='text' name='message' placeholder='Tu Mensaje' required />
+            <FormButton type='submit'>Enviar</FormButton>
+          </Form>
+          <EnlaceContainer>
+            <Enlace>
+              <EnlaceImg src="/public/images/Numero.png" alt="Número de contacto" />
+              <EnlaceA href="tel:6863567581">686 356 7581</EnlaceA>
+            </Enlace>
+            <Enlace>
+              <EnlaceImg src="/public/images/Mail.png" alt="Correo de contacto" />
+              <EnlaceA href="mailto:contacto@petrivsci.com.mx">contacto@petrovsci.com.mx</EnlaceA>
+            </Enlace>
+            <LogoEnlace src='/public/images/logo.png' alt="Logo de la empresa" />
+            <EnlaceRedes>
+              <a href='https://www.facebook.com/profile.php?id=61555431474610'><EnlaceImg src='/public/images/Facebook.png' alt="Facebook" /></a>
+              <a href='https://www.linkedin.com/company/petrov-soluciones-contra-incendio/'><EnlaceImg src='/public/images/Linkedin.png' alt="LinkedIn" /></a>
+            </EnlaceRedes>
+          </EnlaceContainer>
+        </Formulario>
+      </ContactoContainer>
     </FormContainer>
   );
 };

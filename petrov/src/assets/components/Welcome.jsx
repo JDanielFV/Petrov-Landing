@@ -10,7 +10,7 @@ const WelcomeContainer = styled.div`
   justify-content: center;
   height: 40rem;
   width: auto;
-  background-image: url(../src/assets/images/background.webp);
+  background-image: url(/public/images/background.webp);
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem 5rem 2rem;
@@ -52,7 +52,6 @@ const Title = styled.p`
 const Copy = styled.p`
   font-size: 1.5rem;
   color: #DDDDDD;
-  text-align: center;
   max-width: 800px;
   line-height: 1.6;
 
