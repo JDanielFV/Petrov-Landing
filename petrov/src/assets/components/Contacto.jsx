@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+// import { useState } from 'react';
 
 const FormContainer = styled.div`
   background: rgb(101, 9, 9);
@@ -50,6 +51,7 @@ const ContactoContainer = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding: 4rem;
 `;
 
 const Formulario = styled.div`
@@ -64,66 +66,66 @@ const Formulario = styled.div`
   }
 `;
 
-const Form = styled.div`
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 2rem 1rem;
-  background-color: #FFF;
+// const Form = styled.div`
+//   border-radius: 1rem;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 2.5rem;
+//   padding: 2rem 1rem;
+//   background-color: #FFF;
 
-  @media (max-width: 768px) {
-    width: 80vw;
-    padding: 1.5rem;
-  }
-`;
+//   @media (max-width: 768px) {
+//     width: 80vw;
+//     padding: 1.5rem;
+//   }
+// `;
 
-const FormContainerTitle = styled.p`
-  font-size: 2rem;
-  font-weight: 400;
+// const FormContainerTitle = styled.p`
+//   font-size: 2rem;
+//   font-weight: 400;
 
-  @media (max-width: 768px) {
-    font-size: 1.8rem;
-  }
-  @media (max-width: 480px) {
-    font-size: 1.5rem;
-  }
-`;
+//   @media (max-width: 768px) {
+//     font-size: 1.8rem;
+//   }
+//   @media (max-width: 480px) {
+//     font-size: 1.5rem;
+//   }
+// `;
 
-const FormInput = styled.input`
-  font-size: 1.3rem;
-  font-weight: 200;
-  border-radius: 0.5rem;
-  border: none;
-  background-color: #E8E8E8;
-  padding: 0.5rem;
-  width: 100%;
-  font-family: outfit;
+// const FormInput = styled.input`
+//   font-size: 1.3rem;
+//   font-weight: 200;
+//   border-radius: 0.5rem;
+//   border: none;
+//   background-color: #E8E8E8;
+//   padding: 0.5rem;
+//   width: 100%;
+//   font-family: outfit;
 
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-    padding: 0.4rem;
-  }
-`;
+//   @media (max-width: 768px) {
+//     font-size: 1.2rem;
+//     padding: 0.4rem;
+//   }
+// `;
 
-const FormButton = styled.button`
-  border-radius: 0.3rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border: none;
-  background-color: #3B8CC7;
-  color: #FFF;
-  cursor: pointer;
+// const FormButton = styled.button`
+//   border-radius: 0.3rem;
+//   padding: 1rem 2rem;
+//   font-size: 1rem;
+//   border: none;
+//   background-color: #3B8CC7;
+//   color: #FFF;
+//   cursor: pointer;
 
-  @media (max-width: 480px) {
-    padding: 0.8rem 1.5rem;
-  }
+//   @media (max-width: 480px) {
+//     padding: 0.8rem 1.5rem;
+//   }
 
-  &:hover {
-    background-color: #3379a3;
-  }
-`;
+//   &:hover {
+//     background-color: #3379a3;
+//   }
+// `;
 
 const EnlaceContainer = styled.div`
   display: flex;
@@ -194,6 +196,7 @@ const LogoEnlace = styled.img`
 `;
 
 const ContactForm = () => {
+
   return (
     <FormContainer>
       <FormText>
@@ -202,13 +205,6 @@ const ContactForm = () => {
       </FormText>
       <ContactoContainer>
         <Formulario>
-          <Form>
-            <FormContainerTitle>Contáctanos</FormContainerTitle>
-            <FormInput type='text' name='name' placeholder='Tu Nombre' required />
-            <FormInput type='email' name='email' placeholder='Tu Email' required />
-            <FormInput type='text' name='message' placeholder='Tu Mensaje' required />
-            <FormButton type='submit'>Enviar</FormButton>
-          </Form>
           <EnlaceContainer>
             <Enlace>
               <EnlaceImg src="/Numero.png" alt="Número de contacto" />
