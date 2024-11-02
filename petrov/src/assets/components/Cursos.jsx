@@ -138,7 +138,7 @@ const Cursos = () => {
                     <Cta text={"Conoce más"}/>
                 </CursoTarjeta>
                 <CursoTarjeta>
-                    <CursoImagen src="/nfps25.jpg"></CursoImagen>
+                    <CursoImagen src="/nfpa2.webp"></CursoImagen>
                     <CursoTextos>NFPA 25: Aprende Sobre Mantenimientos en Sistemas Contra Incendios</CursoTextos>
                     <Cta text={"Conoce más"}/>
                 </CursoTarjeta>

@@ -31,10 +31,10 @@ const FormTitle = styled.p`
   font-weight: 400;
 
   @media (max-width: 768px) {
-    font-size: 5vw;
+    font-size: 10vw;
   }
   @media (max-width: 480px) {
-    font-size: 6vw;
+    font-size: 10dvw;
   }
 `;
 
@@ -42,16 +42,15 @@ const FormCopy = styled.p`
   font-size: 2vw;
 
   @media (max-width: 768px) {
-    font-size: 2.5vw;
+    font-size: 4dvw;
   }
 `;
 
 const ContactoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
-  padding: 4rem;
+  padding: 4rem 0 4rem 0;
 `;
 
 const Formulario = styled.div`
